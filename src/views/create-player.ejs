@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/create-player.css">
+</head>
+<body>
+    <h1>Add New Player</h1>
+    <form action="/players" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required><br><br>
+        
+        <label for="number">Number:</label>
+        <input type="number" id="number" name="number" required><br><br>
+        
+        <label for="team">Team:</label>
+        <input type="text" id="team" name="team" required><br><br>
+        
+        <input type="submit" value="Add Player">
+    </form>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new team</title>
+    <link rel="stylesheet" href="/css/team.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%- include('partials/navbar') %>
+    <h1>Add new team</h1>
+    <form action="/teams" method="POST">
+        <div>
+            <label for="id">Id team:</label>
+            <input type="text" id="id" name="idTeam" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <br>
+        
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+        <br>
+        
+        <div>
+            <label for="logo">Logo URL:</label>
+            <input type="text" id="logo" name="logo" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="founded">Founded:</label>
+            <input type="date" id="founded" name="founded" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="stadium">Stadium:</label>
+            <input type="text" id="stadium" name="stadium" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="league">League:</label>
+            <input type="text" id="league" name="league" required>
+        </div>
+        <br>
+        
+        <div>
+            <input type="submit" value="Add Team">
+        </div>
+    </form>
+</body>
+</html>
